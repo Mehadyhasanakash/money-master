@@ -18,3 +18,8 @@ body{
 .margin{
     margin-top: 100px;
 }
+
+/* input-size css */
+.input-size{
+    width: 10%;
+}
