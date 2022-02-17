@@ -65,24 +65,30 @@ const button = document.getElementById('calculate-button').addEventListener('cli
   const totalAmountBalances = balance - totalAmount;
   totalBalance.innerText = totalAmountBalances;
 
+
+   // calculate-click \
+ const calculateButton = document.getElementById('calculate-click').addEventListener('click', function  () {
+
+  
+  // save-input
+  const saveInput = getAmount('save-input')
+
+    
+    const saveAmount = document.getElementById('save-amount');
+    const amount = parseFloat(saveAmount.innerText);
+    const newAmout = (totalAmountBalances / 100) * saveInput;
+    saveAmount.innerText = newAmout;
+    
+   
+  })
+
+
 })
 
 
 
 
-  // calculate-click \
- const calculateButton = document.getElementById('calculate-click').addEventListener('click', function (totalAmountBalances) {
-    // save-input
-    const saveInput = getAmount('save-input')
-
-    const saveAmount = document.getElementById('save-amount');
-    const amount = parseFloat(saveAmount.innerText);
-    const saveBlacne = amount + saveInput;
-    saveAmount.innerText = saveBlacne; 
-    const totalBalance = totalAmountBalances / saveBlacne
-   
-  })
-
+ 
 
 
 
