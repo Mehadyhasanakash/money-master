@@ -40,19 +40,19 @@
           <div class="col-md-6 bg-success bg-opacity-10">
 
             <div class="p-3  text-center fs-3 mt-md-3">Income</div>
-            <div class="text-center fs-3 mt-md-3">Income: <input class="ms-3 bg-light" type="text"></div>
+            <div class="text-center fs-3 mt-md-3">Income: <input id="income-input" class="ms-3 bg-light" type="text"></div>
             <div>
               <h1 class="fs-10 mt-md-3 text-center">Expenses </h1>
             </div>
-            <div class="text-center fs-3 mt-md-3">Food: <input class="ms-3 bg-light" type="text"></div>
-            <div class="text-center fs-3 mt-md-3">Rent: <input class="ms-3 bg-light" type="text"></div>
-            <div class="text-center fs-3 mt-md-3">Clothes: <input class="ms-3 bg-light" type="text"></div>
+            <div class="text-center fs-3 mt-md-3">Food: <input id="food-input" class="ms-3 bg-light" type="text"></div>
+            <div class="text-center fs-3 mt-md-3">Rent: <input id="rent-input" class="ms-3 bg-light" type="text"></div>
+            <div class="text-center fs-3 mt-md-3">Clothes: <input id="clothes-input" class="ms-3 bg-light" type="text"></div>
 
-            <button type="button"
+            <button id="calculate-button" type="button"
               class="btn btn-primary btn-lg mt-md-5 d-grid gap-md-5 px-md-5 py-md-3 fs-2 mx-auto">Calculate</button>
 
             <div class="mt-md-3 text-center">
-              <h1>Total Expenses: <span>0000</span> </h1>
+              <h1>Total Expenses: <span id="expenses-amount">0000</span> </h1>
             </div>
 
             <div class="mt-md-3 text-center">
@@ -81,6 +81,10 @@
     </section>
   </main>
 
+
+
+
+  <script src="money.js"></script>
 </body>
 
 </html>
