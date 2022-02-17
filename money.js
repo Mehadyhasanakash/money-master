@@ -3,11 +3,6 @@
 const button = document.getElementById('calculate-button').addEventListener('click', function () {
 
 
-    // income input value
-    const incomeInput = document.getElementById('income-input');
-    const IncomeInputValue = parseFloat(incomeInput.value);
-    // clear input
-    incomeInput.value = "";
 
 
   // fodd input value
@@ -39,7 +34,7 @@ const button = document.getElementById('calculate-button').addEventListener('cli
     const expensesAmount = document.getElementById('expenses-amount');
     const expensesToatalAmout = parseFloat(expensesAmount.innerText);
 
-    const totalAmount =IncomeInputValue - expensesToatalAmout+ foodInputValue + rentInputValue +clothersInputValue ;
+    const totalAmount = expensesToatalAmout+ foodInputValue + rentInputValue +clothersInputValue ;
     expensesAmount.innerText = totalAmount;
 
    
@@ -48,13 +43,21 @@ const button = document.getElementById('calculate-button').addEventListener('cli
      
 
     
+    // income input value
+    const incomeInput = document.getElementById('income-input');
+    const IncomeInputValue = parseFloat(incomeInput.value);
+    // clear input
+    incomeInput.value = "";
 
      
  
     
     const totalBalance = document.getElementById('total-Balance');
     const preBalance = parseFloat(totalBalance.innerText);
-    totalBalance.innerText = totalPrice + preBalance;
+    const balance = preBalance + IncomeInputValue;
+    const totalAmountBalances = balance - totalAmount;
+    totalBalance.innerText = totalAmountBalances;
+
   
         
     
