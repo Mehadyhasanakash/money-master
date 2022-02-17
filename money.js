@@ -73,11 +73,17 @@ const button = document.getElementById('calculate-button').addEventListener('cli
   // save-input
   const saveInput = getAmount('save-input')
 
-    
+    // saveing amount
     const saveAmount = document.getElementById('save-amount');
     const amount = parseFloat(saveAmount.innerText);
     const newAmout = (totalAmountBalances / 100) * saveInput;
     saveAmount.innerText = newAmout;
+
+    // remaining-amount
+    const reaminingAmount = document.getElementById('remaining-amount')
+    const newAmoutBlance = parseFloat(reaminingAmount.innerText);
+    const newReaminingAmount = totalAmountBalances - newAmout;
+    reaminingAmount.innerText = newReaminingAmount 
     
    
   })
