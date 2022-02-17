@@ -20,6 +20,7 @@ function getAmount(money) {
 
 const button = document.getElementById('calculate-button').addEventListener('click', function () {
 
+  
   const foodInputValue = getAmount('food-input')
 
 
