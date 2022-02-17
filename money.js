@@ -1,33 +1,41 @@
 // calculate button
 
-const button = document.getElementById('calculate-button').addEventListener('click', function () {
-
-
-
+function getAmount(money){
 
   // fodd input value
-    const foodInput = document.getElementById('food-input');
-    const foodInputValue = parseFloat(foodInput.value);
+  const foodInput = document.getElementById(money);
+  const foodInputValue = parseFloat(foodInput.value);
 
-    // clear input
-    foodInput.value = '';
+  // clear input
+  foodInput.value = '';
+  return foodInputValue;
+}
+
+
+
+
+
+
+
+
+const button = document.getElementById('calculate-button').addEventListener('click', function () {
+
+  const foodInputValue = getAmount('food-input')
+
+
 
 
     // rent-input value
-    const rentInput = document.getElementById('rent-input');
-    const rentInputValue = parseFloat(rentInput.value);
+
+    const rentInputValue = getAmount('rent-input');
 
 
-    // clear input
-    rentInput.value = '';
-
+    
 
     // clothes-input
-    const clothesInput = document.getElementById('clothes-input');
-    const clothersInputValue = parseFloat(clothesInput.value);
+    
+    const clothersInputValue = getAmount('clothes-input');
 
-    // clear input
-    clothesInput.value = "";
 
 
     // expenses-amount total
@@ -44,10 +52,9 @@ const button = document.getElementById('calculate-button').addEventListener('cli
 
     
     // income input value
-    const incomeInput = document.getElementById('income-input');
-    const IncomeInputValue = parseFloat(incomeInput.value);
-    // clear input
-    incomeInput.value = "";
+    
+    const IncomeInputValue = getAmount('income-input');
+   
 
      
  
