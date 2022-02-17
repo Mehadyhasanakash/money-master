@@ -24,47 +24,49 @@
 
 <body>
   <!-- header start -->
-  <header class="container">
+  <header class="container-sm">
     <h1 class="font-size">The Money Tree</h1>
   </header>
   <!-- header end -->
 
   <main class="margin">
     <section>
-      <div class="container-sm">
+      <div class="container-md">
         <div class="row gy-5 ">
           <div class="col-6">
-            <div class="p-3 border bg-light"><img class="img-fluid" src="Image/giorgio-trovato-WyxqQpyFNk8-unsplash.jpg"
+            <div class=""><img class="img-fluid mx-auto" src="Image/giorgio-trovato-WyxqQpyFNk8-unsplash.jpg"
                 alt=""></div>
           </div>
           <div class="col-md-6 bg-success bg-opacity-10">
 
-            <div class="p-3  text-center fs-3 mt-md-3">Income</div>
-            <div class="text-center fs-3 mt-md-3">Income: <input id="income-input" class="ms-3 bg-light" type="text"></div>
-            <div>
-              <h1 class="fs-10 mt-md-3 text-center">Expenses </h1>
+            <div class="p-3  text-center fs-3 mt-3">Income</div>
+            <div class="text-center fs-3 mt-md-3">Income: <input id="income-input" class="ms-3 bg-light" type="text">
             </div>
-            <div class="text-center fs-3 mt-md-3">Food: <input id="food-input" class="ms-3 bg-light" type="text"></div>
-            <div class="text-center fs-3 mt-md-3">Rent: <input id="rent-input" class="ms-3 bg-light" type="text"></div>
-            <div class="text-center fs-3 mt-md-3">Clothes: <input id="clothes-input" class="ms-3 bg-light" type="text"></div>
+            <div>
+              <h1 class="fs-10 mt-3 text-center">Expenses </h1>
+            </div>
+            <div class="text-center fs-3 mt-3">Food: <input id="food-input" class="ms-3 bg-light" type="text"></div>
+            <div class="text-center fs-3 mt-3">Rent: <input id="rent-input" class="ms-3 bg-light" type="text"></div>
+            <div class="text-center fs-3 mt-3">Clothes: <input id="clothes-input" class="ms-3 bg-light" type="text">
+            </div>
 
             <button id="calculate-button" type="button"
-              class="btn btn-primary btn-lg mt-md-5 d-grid gap-md-5 px-md-5 py-md-3 fs-2 mx-auto">Calculate</button>
+              class="btn btn-primary btn-lg mt-5 d-grid gap-md-5 px-5 py-3 fs-2 mx-auto">Calculate</button>
 
-            <div class="mt-md-3 text-center">
+            <div class="mt-3 text-center">
               <h1>Total Expenses: <span id="expenses-amount">0000</span> </h1>
             </div>
 
-            <div class="mt-md-3 text-center">
+            <div class="mt-3 text-center">
               <h1>Balance: <span id="total-Balance">0000</span> </h1>
             </div>
 
-            <div class="d-flex text-center mt-md-5">
-              <h3>Save: <input class="input-size" type="text"> <span>% </span>  <button type="button"
-                class="btn btn-primary btn-sm p-md-3 ">Calculate</button> </h3>
+            <div class="d-flex text-center mt-5">
+              <h3>Save: <input id="save-input" class="input-size" type="text"> <span>% </span> <button
+                  id="calculate-click" type="button" class="btn btn-primary btn-sm p-md-3 ">Calculate</button> </h3>
             </div>
             <div>
-              <h1 class="text-center">Saving Amount: <span>0000</span></h1>
+              <h1 class="text-center">Saving Amount: <span id="save-amount">0000</span></h1>
             </div>
             <div>
               <h1 class="text-center">Remaining Balance: <span>0000</span></h1>
